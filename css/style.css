@@ -1,0 +1,28 @@
+#main{
+    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    background-color:#ebe7e7;
+}
+.mainDiv{
+    margin: 0px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 15px;
+    color: rgb(80, 79, 79);
+    text-align: justify;
+}
+.headerH1,.chapter,.motto{
+    font-family: 'Marck Script', cursive;
+}
+.motto{
+    font-size: 20px;
+}
+.headerH1{
+    font-size: 60px;
+    padding-left: 50px;;
+}
+.picture{
+    float: right;
+    height: 150px;
+    width: 170px;
+    margin:0px 10px;
+}
