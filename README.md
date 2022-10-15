@@ -14,4 +14,6 @@ After the first lesson:
 ## Languages
  - HTML
  - CSS
+ - BEM
  - JavaScript
+ - ES6+ features

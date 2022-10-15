@@ -1,22 +1,31 @@
-console.log("Pozdrawiam uczestników kursu Frontend Developer od podstaw. Wrzesień 2022");
+{
+    const welcome = () => {
+        console.log("Pozdrawiam uczestników kursu Frontend Developer od podstaw. Wrzesień 2022");
+    }
+    const showAnswer = (spanElement, buttonElement, answerTheQuestion) => {
+        buttonElement.remove();
+        spanElement.innerText += answerTheQuestion;
+    }
+    const init = () => {
+        const spanSuchar1 = document.getElementById("spanSuchar1");
+        const buttonSuchar1 = document.getElementById("buttonSuchar1");
+        buttonSuchar1.addEventListener("click", () => {
+            showAnswer(spanSuchar1, buttonSuchar1, " - Pobieranie zakończone.")
+        });
 
-let sSuchar1 = document.getElementById("sSuchar1");
-let sSuchar2 = document.getElementById("sSuchar2");
-let sSuchar3 = document.getElementById("sSuchar3");
+        const spanSuchar2 = document.getElementById("spanSuchar2");
+        const buttonSuchar2 = document.getElementById("buttonSuchar2");
+        buttonSuchar2.addEventListener("click", () => {
+            showAnswer(spanSuchar2, buttonSuchar2, " - C++.");
+        });
 
-let bSuchar1 = document.getElementById("bSuchar1");
-let bSuchar2 = document.getElementById("bSuchar2");
-let bSuchar3 = document.getElementById("bSuchar3");
+        const spanSuchar3 = document.getElementById("spanSuchar3");
+        const buttonSuchar3 = document.getElementById("buttonSuchar3");
+        buttonSuchar3.addEventListener("click", () => {
+            showAnswer(spanSuchar3, buttonSuchar3, " - Myszko...");
+        });
+    }
 
-bSuchar1.addEventListener("click", () => {
-    bSuchar1.remove();
-    sSuchar1.innerText = "Co mówi informatyk po ślubie? - Pobieranie zakończone."
-});
-bSuchar2.addEventListener("click", () => {
-    bSuchar2.remove();
-    sSuchar2.innerText = "Jaką witaminę zażywa informatyk? - C++"
-});
-bSuchar3.addEventListener("click", () => {
-    bSuchar3.remove();
-    sSuchar3.innerText = "Jak najczęściej informatycy zwracają się do swoich żon? - Myszko..."
-});
+    welcome();
+    init();
+}
