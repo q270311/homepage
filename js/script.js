@@ -7,6 +7,7 @@
         spanElement.innerText += answerTheQuestion;
     }
     const init = () => {
+        welcome();
         const spanSuchar1 = document.getElementById("spanSuchar1");
         const buttonSuchar1 = document.getElementById("buttonSuchar1");
         buttonSuchar1.addEventListener("click", () => {
@@ -24,8 +25,6 @@
         buttonSuchar3.addEventListener("click", () => {
             showAnswer(spanSuchar3, buttonSuchar3, " - Myszko...");
         });
-    }
-
-    welcome();
+    }    
     init();
 }
